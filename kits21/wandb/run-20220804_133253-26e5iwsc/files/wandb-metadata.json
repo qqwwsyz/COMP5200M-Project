@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-08-04T12:32:55.832596",
+    "startedAt": "2022-08-04T12:32:53.449118",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\Leeds MS\\kits21\\train.py",
+    "codePath": "train.py",
+    "host": "LAPTOP-EVJ9JFAF",
+    "username": "czm28",
+    "executable": "C:\\Users\\czm28\\anaconda3\\envs\\name\\python.exe"
+}

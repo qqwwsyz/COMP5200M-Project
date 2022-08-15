@@ -1,0 +1,16 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+
+
+
+
+Epoch 1/20:   0%|          | 28/54472 [00:10<5:40:10,  2.67img/s, loss (batch)=1.11]
+INFO: Saved interrupt

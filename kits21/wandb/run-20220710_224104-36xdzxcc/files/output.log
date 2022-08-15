@@ -1,0 +1,294 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/10790 [00:00<?, ?img/s]C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\autocast_mode.py:162: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+llllll000000000000
+tensor([0, 1])
+Epoch 1/1000:   0%|          | 1/10790 [00:03<10:24:27,  3.47s/img, loss (batch)=1.35]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 2/10790 [00:06<8:47:14,  2.93s/img, loss (batch)=1.3]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 3/10790 [00:08<7:29:18,  2.50s/img, loss (batch)=1.25]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 4/10790 [00:10<6:53:40,  2.30s/img, loss (batch)=1.21]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 6/10790 [00:14<6:27:36,  2.16s/img, loss (batch)=1.11]
+llllll000000000000
+tensor([0, 1, 2])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 8/10790 [00:18<6:25:05,  2.14s/img, loss (batch)=1.02]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 9/10790 [00:20<6:23:43,  2.14s/img, loss (batch)=1.03]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 10/10790 [00:22<6:26:46,  2.15s/img, loss (batch)=1]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 11/10790 [00:25<6:38:23,  2.22s/img, loss (batch)=1]
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 13/10790 [00:29<6:48:01,  2.27s/img, loss (batch)=0.949]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 14/10790 [00:31<6:46:22,  2.26s/img, loss (batch)=0.899]
+llllll000000000000
+tensor([0, 1])
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 15/10790 [00:34<6:53:02,  2.30s/img, loss (batch)=0.897]
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 17/10790 [00:38<6:55:26,  2.31s/img, loss (batch)=0.868]
+llllll000000000000
+tensor([0, 1, 2])
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 18/10790 [00:41<6:50:30,  2.29s/img, loss (batch)=0.86]
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 20/10790 [00:45<6:44:52,  2.26s/img, loss (batch)=0.826]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 22/10790 [00:50<6:38:30,  2.22s/img, loss (batch)=0.802]
+llllll000000000000
+tensor([0, 1])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 24/10790 [00:54<6:33:45,  2.19s/img, loss (batch)=0.771]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 25/10790 [00:56<6:31:04,  2.18s/img, loss (batch)=0.788]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 26/10790 [00:58<6:31:49,  2.18s/img, loss (batch)=0.751]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 27/10790 [01:00<6:29:09,  2.17s/img, loss (batch)=0.723]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 28/10790 [01:03<6:40:55,  2.24s/img, loss (batch)=0.726]
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 30/10790 [01:07<6:47:53,  2.27s/img, loss (batch)=0.717]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 31/10790 [01:10<6:48:53,  2.28s/img, loss (batch)=0.686]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 32/10790 [01:12<7:02:40,  2.36s/img, loss (batch)=0.699]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 33/10790 [01:14<6:56:54,  2.33s/img, loss (batch)=0.713]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 34/10790 [01:17<7:01:04,  2.35s/img, loss (batch)=0.664]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 35/10790 [01:19<6:55:39,  2.32s/img, loss (batch)=0.65]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 36/10790 [01:21<6:44:47,  2.26s/img, loss (batch)=0.646]
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 38/10790 [01:25<6:26:39,  2.16s/img, loss (batch)=0.658]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 39/10790 [01:27<6:20:42,  2.12s/img, loss (batch)=0.636]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 40/10790 [01:29<6:17:00,  2.10s/img, loss (batch)=0.66]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 41/10790 [01:31<6:13:10,  2.08s/img, loss (batch)=0.627]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 42/10790 [01:33<6:08:32,  2.06s/img, loss (batch)=0.608]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 43/10790 [01:36<6:07:42,  2.05s/img, loss (batch)=0.638]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 45/10790 [01:40<6:02:20,  2.02s/img, loss (batch)=0.585]
+llllll000000000000
+tensor([0, 1])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 47/10790 [01:44<6:05:33,  2.04s/img, loss (batch)=0.61]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 48/10790 [01:46<6:16:29,  2.10s/img, loss (batch)=0.586]
+llllll000000000000
+tensor([0, 1])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 50/10790 [01:50<6:09:17,  2.06s/img, loss (batch)=0.557]
+llllll000000000000
+tensor([0, 1, 2])
+llllll000000000000
+
+
+Epoch 1/1000:   0%|          | 52/10790 [01:54<6:15:46,  2.10s/img, loss (batch)=0.581]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 54/10790 [01:58<6:11:02,  2.07s/img, loss (batch)=0.612]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 55/10790 [02:00<6:08:48,  2.06s/img, loss (batch)=0.537]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 57/10790 [02:04<6:04:00,  2.03s/img, loss (batch)=0.543]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 58/10790 [02:06<6:05:30,  2.04s/img, loss (batch)=0.536]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 60/10790 [02:11<6:10:23,  2.07s/img, loss (batch)=0.52]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 62/10790 [02:15<6:44:14,  2.26s/img, loss (batch)=0.516]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 63/10790 [02:18<6:39:16,  2.23s/img, loss (batch)=0.534]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 64/10790 [02:20<6:43:54,  2.26s/img, loss (batch)=0.511]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 66/10790 [02:24<6:33:16,  2.20s/img, loss (batch)=0.504]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 68/10790 [02:29<7:06:56,  2.39s/img, loss (batch)=0.508]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 69/10790 [02:31<6:49:52,  2.29s/img, loss (batch)=0.512]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 70/10790 [02:33<6:37:03,  2.22s/img, loss (batch)=0.499]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 71/10790 [02:35<6:26:51,  2.17s/img, loss (batch)=0.49]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 72/10790 [02:37<6:20:20,  2.13s/img, loss (batch)=0.477]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 74/10790 [02:42<6:11:32,  2.08s/img, loss (batch)=0.473]
+llllll000000000000
+tensor([0])
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 76/10790 [02:46<6:08:11,  2.06s/img, loss (batch)=0.47]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 77/10790 [02:48<6:11:32,  2.08s/img, loss (batch)=0.468]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 78/10790 [02:50<6:12:17,  2.09s/img, loss (batch)=0.472]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 79/10790 [02:52<6:13:42,  2.09s/img, loss (batch)=0.505]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 80/10790 [02:54<6:37:06,  2.22s/img, loss (batch)=0.466]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 81/10790 [02:57<6:45:32,  2.27s/img, loss (batch)=0.468]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 83/10790 [03:01<6:38:05,  2.23s/img, loss (batch)=0.454]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 84/10790 [03:03<6:36:17,  2.22s/img, loss (batch)=0.443]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 86/10790 [03:08<6:46:12,  2.28s/img, loss (batch)=0.435]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 87/10790 [03:10<6:46:16,  2.28s/img, loss (batch)=0.45]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 88/10790 [03:13<6:44:48,  2.27s/img, loss (batch)=0.426]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 89/10790 [03:15<6:46:46,  2.28s/img, loss (batch)=0.43]
+llllll000000000000
+tensor([0])
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 91/10790 [03:20<6:50:33,  2.30s/img, loss (batch)=0.417]
+llllll000000000000
+
+
+Epoch 1/1000:   1%|          | 93/10790 [03:24<6:53:59,  2.32s/img, loss (batch)=0.415]
+llllll000000000000
+tensor([0])
+llllll000000000000
+Epoch 1/1000:   1%|          | 94/10790 [03:27<6:33:50,  2.21s/img, loss (batch)=0.413]
+INFO: Saved interrupt

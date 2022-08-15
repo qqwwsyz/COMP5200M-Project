@@ -1,0 +1,17 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/10790 [00:00<?, ?img/s]C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\autocast_mode.py:162: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+llllll000000000000
+tensor([0, 1, 2])
+
+Epoch 1/1000:   0%|          | 16/10790 [01:35<17:54:43,  5.99s/img, loss (batch)=1.51]
+INFO: Saved interrupt

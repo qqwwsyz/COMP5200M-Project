@@ -1,0 +1,27 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/10790 [00:07<?, ?img/s]
+Traceback (most recent call last):
+  File "D:\AI\kits21-master\kits21\train.py", line 197, in <module>
+    train_net(net=net,
+  File "D:\AI\kits21-master\kits21\train.py", line 98, in train_net
+    masks_pred = net(images)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\AI\kits21-master\kits21\unet\unet_model.py", line 32, in forward
+    x = self.up2(x, x3)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\AI\kits21-master\kits21\unet\unet_parts.py", line 62, in forward
+    x1 = F.pad(x1, [diffX // 2, diffX - diffX // 2,
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\functional.py", line 4364, in _pad
+    return _VF.constant_pad_nd(input, pad, value)
+RuntimeError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 6.00 GiB total capacity; 2.67 GiB already allocated; 1.59 GiB free; 2.73 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

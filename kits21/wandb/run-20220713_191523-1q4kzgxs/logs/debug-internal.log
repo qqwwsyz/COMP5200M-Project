@@ -1,0 +1,1378 @@
+2022-07-13 19:15:24,161 INFO    MainThread:20304 [internal.py:wandb_internal():90] W&B internal server running at pid: 20304, started at: 2022-07-13 19:15:24.161939
+2022-07-13 19:15:24,163 INFO    WriterThread:20304 [datastore.py:open_for_write():75] open: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\run-1q4kzgxs.wandb
+2022-07-13 19:15:24,165 DEBUG   SenderThread:20304 [sender.py:send():236] send: header
+2022-07-13 19:15:24,166 DEBUG   SenderThread:20304 [sender.py:send():236] send: run
+2022-07-13 19:15:24,168 INFO    SenderThread:20304 [sender.py:_maybe_setup_resume():493] checking resume status for None/U-Net/1q4kzgxs
+2022-07-13 19:15:25,154 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: check_version
+2022-07-13 19:15:25,167 INFO    SenderThread:20304 [dir_watcher.py:__init__():216] watching files in: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files
+2022-07-13 19:15:25,167 INFO    SenderThread:20304 [sender.py:_start_run_threads():815] run started: 1q4kzgxs with start time 1657710923
+2022-07-13 19:15:25,168 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:25,168 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:25,168 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: check_version
+2022-07-13 19:15:26,181 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:30,171 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: run_start
+2022-07-13 19:15:30,191 DEBUG   HandlerThread:20304 [meta.py:__init__():35] meta init
+2022-07-13 19:15:30,191 DEBUG   HandlerThread:20304 [meta.py:__init__():49] meta init done
+2022-07-13 19:15:30,191 DEBUG   HandlerThread:20304 [meta.py:probe():209] probe
+2022-07-13 19:15:30,212 DEBUG   HandlerThread:20304 [meta.py:_save_pip():53] save pip
+2022-07-13 19:15:30,213 DEBUG   HandlerThread:20304 [meta.py:_save_pip():67] save pip done
+2022-07-13 19:15:30,214 DEBUG   HandlerThread:20304 [meta.py:_save_conda():74] save conda
+2022-07-13 19:15:30,220 ERROR   HandlerThread:20304 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\wandb\sdk\internal\meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+2022-07-13 19:15:30,222 DEBUG   HandlerThread:20304 [meta.py:_save_conda():84] save conda done
+2022-07-13 19:15:30,222 DEBUG   HandlerThread:20304 [meta.py:probe():247] probe done
+2022-07-13 19:15:30,238 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\conda-environment.yaml
+2022-07-13 19:15:30,238 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-metadata.json
+2022-07-13 19:15:30,239 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\requirements.txt
+2022-07-13 19:15:30,254 DEBUG   SenderThread:20304 [sender.py:send():236] send: files
+2022-07-13 19:15:30,254 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-07-13 19:15:30,264 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:15:30,264 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:15:30,723 DEBUG   SenderThread:20304 [sender.py:send():236] send: telemetry
+2022-07-13 19:15:30,723 DEBUG   SenderThread:20304 [sender.py:send():236] send: config
+2022-07-13 19:15:31,251 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:31,601 INFO    Thread-11 :20304 [upload_job.py:push():138] Uploaded file C:\Users\OUR\AppData\Local\Temp\tmp24sqi7auwandb\3ivmk8fa-wandb-metadata.json
+2022-07-13 19:15:33,271 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:34,064 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:34,065 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:34,065 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:34,065 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:34,279 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:35,401 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:35,401 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:35,401 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:35,402 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:35,889 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:35,890 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:35,890 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:35,890 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:36,295 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:36,707 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:36,707 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:36,707 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:36,708 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:37,190 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:37,190 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:37,190 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:37,191 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:37,309 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:37,310 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:37,678 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:37,678 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:37,679 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:37,680 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:38,137 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:38,137 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:38,138 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:38,138 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:38,319 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:38,643 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:38,644 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:38,644 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:38,645 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:39,121 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:39,122 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:39,122 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:39,122 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:39,332 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:39,333 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:39,575 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:39,575 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:39,576 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:39,576 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:40,040 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:40,040 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:40,041 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:40,043 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:40,341 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:40,342 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:40,591 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:40,596 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:40,597 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:40,597 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:41,079 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:41,079 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:41,080 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:41,080 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:41,348 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:41,521 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:41,521 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:41,522 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:41,522 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:42,055 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:42,056 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:42,056 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:42,058 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:42,360 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:42,361 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:42,491 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:42,491 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:42,492 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:42,492 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:42,950 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:42,951 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:42,951 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:42,952 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:43,373 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:43,473 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:43,473 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:43,474 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:43,474 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:43,935 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:43,936 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:43,936 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:43,937 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:44,374 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:44,374 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:44,461 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:44,461 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:44,461 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:44,462 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:44,942 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:44,943 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:44,943 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:44,943 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:45,375 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:45,436 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:45,437 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:45,437 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:45,437 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:45,732 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:15:45,732 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:15:46,071 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:46,178 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:46,179 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:46,181 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:46,379 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:46,380 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:46,571 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:46,571 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:46,572 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:46,572 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:47,042 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:47,043 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:47,043 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:47,043 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:47,393 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:47,588 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:47,589 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:47,589 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:47,589 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:48,116 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:48,117 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:48,117 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:48,117 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:48,399 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:48,399 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:48,609 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:48,609 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:48,610 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:48,610 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:49,077 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:49,078 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:49,078 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:49,079 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:49,407 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:49,595 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:49,596 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:49,596 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:49,596 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:50,156 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:50,157 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:50,157 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:50,157 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:50,415 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:50,416 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:50,630 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:50,631 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:50,631 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:50,631 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:51,134 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:51,134 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:51,135 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:51,135 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:51,417 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:51,570 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:51,571 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:51,571 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:51,572 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:51,977 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:51,978 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:51,978 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:51,978 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:52,427 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:52,427 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:52,496 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:52,497 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:52,497 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:52,497 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:52,960 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:52,960 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:52,961 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:52,961 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:53,442 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:53,483 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:53,484 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:53,484 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:53,485 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:53,921 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:53,922 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:53,922 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:53,922 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:54,347 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:54,348 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:54,461 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:54,462 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:54,877 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:54,878 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:54,880 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:54,880 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:54,880 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:54,881 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:55,398 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:55,398 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:55,398 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:55,399 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:55,470 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:55,471 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\config.yaml
+2022-07-13 19:15:55,838 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:55,839 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:55,839 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:55,840 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:56,321 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:56,322 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:56,322 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:56,322 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:56,478 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:56,479 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:56,820 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:56,820 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:56,821 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:56,821 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:57,291 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:57,292 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:57,292 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:57,293 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:57,481 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:57,779 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:57,779 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:57,780 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:57,780 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:58,250 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:58,251 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:58,251 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:58,251 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:58,497 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:58,497 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:15:58,747 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:58,748 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:58,748 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:58,748 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:59,237 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:59,238 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:59,238 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:59,238 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:15:59,507 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:15:59,705 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:15:59,705 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:15:59,705 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:15:59,706 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:00,160 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:00,161 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:00,161 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:00,161 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:00,520 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:00,520 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:00,659 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:00,660 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:00,660 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:00,661 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:01,096 DEBUG   SenderThread:20304 [sender.py:send():236] send: stats
+2022-07-13 19:16:01,180 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:16:01,180 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:16:01,185 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:01,534 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:01,638 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:01,916 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:01,917 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:01,918 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:01,919 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:01,919 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:01,920 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:02,091 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:02,091 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:02,092 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:02,092 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:02,541 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:02,541 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:02,590 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:02,590 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:02,590 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:02,591 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:03,364 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:03,365 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:03,365 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:03,365 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:03,547 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:04,144 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:04,145 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:04,145 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:04,146 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:04,557 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:04,557 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:04,835 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:04,836 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:04,836 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:04,837 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:05,358 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:05,358 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:05,359 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:05,359 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:05,559 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:05,846 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:05,846 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:05,847 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:05,848 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:06,291 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:06,291 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:06,292 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:06,293 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:06,572 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:06,573 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:06,804 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:06,804 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:06,804 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:06,805 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:07,247 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:07,248 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:07,248 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:07,249 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:07,577 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:07,755 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:07,756 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:07,756 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:07,756 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:08,250 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:08,251 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:08,251 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:08,251 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:08,593 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:08,594 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:08,737 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:08,737 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:08,737 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:08,738 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:09,234 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:09,235 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:09,235 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:09,236 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:09,604 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:09,685 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:09,685 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:09,686 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:09,686 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:10,133 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:10,133 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:10,133 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:10,134 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:10,605 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:10,606 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:10,641 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:10,641 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:10,641 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:10,642 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:11,116 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:11,116 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:11,116 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:11,117 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:11,610 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:11,612 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:11,613 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:11,613 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:11,613 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:12,128 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:12,129 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:12,129 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:12,130 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:12,621 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:12,621 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:12,632 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:12,633 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:12,633 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:12,633 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:13,217 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:13,218 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:13,218 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:13,218 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:13,627 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:13,638 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:13,639 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:13,639 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:13,640 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:14,133 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:14,134 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:14,134 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:14,135 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:14,565 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:14,565 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:14,565 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:14,566 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:14,629 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:14,629 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:15,013 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:15,014 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:15,014 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:15,015 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:15,462 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:15,462 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:15,463 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:15,463 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:15,642 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:15,879 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:15,879 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:15,879 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:15,880 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:16,322 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:16,323 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:16,323 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:16,323 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:16,653 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:16,653 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:16,806 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:16,806 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:16,807 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:16,807 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:16,926 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:16:16,927 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:16:17,220 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:17,668 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:17,725 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:18,183 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:18,363 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:18,363 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:18,364 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:18,364 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:18,364 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:18,365 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:18,365 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:18,365 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:18,366 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:18,637 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:18,638 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:18,638 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:18,638 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:18,670 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:18,671 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:19,147 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:19,148 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:19,148 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:19,149 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:19,603 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:19,603 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:19,604 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:19,604 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:19,681 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:20,093 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:20,094 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:20,094 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:20,095 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:20,551 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:20,552 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:20,552 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:20,552 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:20,683 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:20,684 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:20,955 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:20,956 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:20,956 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:20,956 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:21,392 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:21,393 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:21,393 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:21,393 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:21,690 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:21,916 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:21,916 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:21,916 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:21,917 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:22,318 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:22,319 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:22,319 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:22,320 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:22,693 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:22,694 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:22,917 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:22,917 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:22,918 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:22,918 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:23,335 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:23,335 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:23,336 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:23,336 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:23,696 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:23,769 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:23,770 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:23,770 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:23,770 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:24,700 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:24,701 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:25,520 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:25,521 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:25,521 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:25,521 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:25,704 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:26,147 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:26,148 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:26,148 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:26,149 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:26,553 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:26,553 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:26,554 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:26,554 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:26,712 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:26,713 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:27,131 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:27,131 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:27,131 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:27,132 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:27,581 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:27,581 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:27,582 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:27,582 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:27,719 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:28,045 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:28,045 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:28,045 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:28,046 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:28,616 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:28,617 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:28,617 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:28,618 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:28,733 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:28,733 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:29,053 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:29,054 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:29,054 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:29,054 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:29,517 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:29,518 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:29,518 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:29,518 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:29,734 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:29,901 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:29,902 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:29,902 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:29,902 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:30,367 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:30,368 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:30,368 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:30,368 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:30,738 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:30,738 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:30,849 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:30,849 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:30,850 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:30,850 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:31,387 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:31,388 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:31,388 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:31,388 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:31,747 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:31,869 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:31,869 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:31,870 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:31,870 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:32,281 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:32,281 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:32,282 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:32,282 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:32,749 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:32,750 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:32,804 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:32,805 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:32,805 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:32,805 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:33,232 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:33,233 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:33,233 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:33,234 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:33,370 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:16:33,370 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:16:33,708 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:33,761 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:33,795 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:33,796 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:33,797 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:34,047 DEBUG   SenderThread:20304 [sender.py:send():236] send: stats
+2022-07-13 19:16:34,141 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:34,142 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:34,142 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:34,142 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:34,579 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:34,579 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:34,580 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:34,580 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:34,775 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:34,775 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:35,057 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:35,057 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:35,058 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:35,058 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:35,494 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:35,495 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:35,495 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:35,496 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:35,786 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:36,025 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:36,025 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:36,025 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:36,026 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:36,528 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:36,529 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:36,529 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:36,529 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:36,800 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:36,800 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:37,030 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:37,031 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:37,031 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:37,032 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:37,500 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:37,501 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:37,501 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:37,501 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:37,802 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:38,010 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:38,010 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:38,011 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:38,011 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:38,488 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:38,488 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:38,489 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:38,489 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:38,806 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:38,806 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:39,025 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:39,025 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:39,026 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:39,026 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:39,473 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:39,473 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:39,474 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:39,474 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:39,810 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:39,932 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:39,933 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:39,933 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:39,934 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:40,350 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:40,350 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:40,351 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:40,351 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:40,783 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:40,783 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:40,784 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:40,784 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:40,814 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:40,814 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:41,205 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:41,205 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:41,206 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:41,206 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:41,654 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:41,655 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:41,655 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:41,656 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:41,824 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:42,265 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:42,265 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:42,266 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:42,266 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:42,715 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:42,715 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:42,715 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:42,716 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:42,833 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:42,833 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:43,173 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:43,173 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:43,173 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:43,174 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:43,658 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:43,659 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:43,659 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:43,659 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:43,834 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:44,106 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:44,107 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:44,107 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:44,108 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:44,596 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:44,596 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:44,597 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:44,597 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:44,849 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:44,850 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:45,109 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:45,109 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:45,109 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:45,110 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:45,639 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:45,640 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:45,640 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:45,640 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:45,860 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:46,145 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:46,146 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:46,146 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:46,146 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:46,724 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:46,725 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:46,725 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:46,726 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:46,873 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:46,874 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:47,228 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:47,228 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:47,229 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:47,229 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:47,738 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:47,739 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:47,739 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:47,739 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:47,889 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:48,259 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:48,259 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:48,260 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:48,260 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:48,802 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:48,803 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:48,803 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:48,804 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:48,805 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:16:48,805 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:16:48,901 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:48,902 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:49,296 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:49,611 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:49,611 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:49,612 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:49,770 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:49,770 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:49,770 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:49,771 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:49,911 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:50,249 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:50,250 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:50,250 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:50,251 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:50,685 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:50,685 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:50,686 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:50,686 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:50,926 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:50,927 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:51,198 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:51,198 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:51,198 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:51,199 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:51,782 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:51,783 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:51,783 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:51,783 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:51,941 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:52,257 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:52,257 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:52,257 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:52,258 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:52,687 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:52,688 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:52,688 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:52,689 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:52,952 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:52,953 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:53,175 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:53,176 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:53,176 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:53,176 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:53,634 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:53,635 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:53,635 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:53,635 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:53,957 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:54,152 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:54,153 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:54,153 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:54,153 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:54,644 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:54,644 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:54,644 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:54,645 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:54,963 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:54,963 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:55,032 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:55,032 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:55,033 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:55,033 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:55,508 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:55,508 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:55,508 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:55,509 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:55,893 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:55,894 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:55,894 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:55,894 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:55,980 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:56,338 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:56,338 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:56,338 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:56,339 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:56,801 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:56,801 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:56,802 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:56,802 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:56,989 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:56,990 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:57,265 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:57,266 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:57,266 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:57,266 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:57,716 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:57,717 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:57,717 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:57,717 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:57,997 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:58,103 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:58,104 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:58,104 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:58,105 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:58,608 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:58,608 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:58,608 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:58,609 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:59,000 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:16:59,001 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:16:59,071 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:59,071 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:59,071 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:59,072 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:59,523 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:59,523 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:59,523 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:59,524 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:16:59,997 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:16:59,998 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:16:59,998 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:16:59,999 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:00,002 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:00,393 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:00,393 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:00,393 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:00,394 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:00,921 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:00,921 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:00,922 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:00,922 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:01,017 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:01,018 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:01,444 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:01,444 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:01,445 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:01,445 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:02,019 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:02,020 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:02,020 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:02,020 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:02,033 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:02,525 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:02,526 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:02,526 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:02,526 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:02,970 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:02,970 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:02,970 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:02,971 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:03,040 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:03,041 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:03,459 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:03,460 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:03,460 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:03,461 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:03,969 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:03,970 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:03,970 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:03,970 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:04,052 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:04,511 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:04,511 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:04,512 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:04,512 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:04,619 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:17:04,619 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:17:04,934 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:05,064 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:05,065 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:05,070 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:05,071 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:05,073 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:05,423 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:05,424 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:05,424 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:05,425 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:05,935 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:05,936 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:05,936 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:05,937 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:06,079 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:06,410 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:06,410 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:06,410 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:06,411 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:06,945 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:06,945 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:06,946 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:06,946 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:07,015 DEBUG   SenderThread:20304 [sender.py:send():236] send: stats
+2022-07-13 19:17:07,085 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:07,086 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:07,342 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:07,342 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:07,343 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:07,343 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:07,793 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:07,793 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:07,794 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:07,794 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:08,096 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:08,234 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:08,234 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:08,235 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:08,235 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:08,710 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:08,711 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:08,711 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:08,711 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:09,102 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:09,102 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:09,177 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:09,177 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:09,177 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:09,178 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:09,722 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:09,722 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:09,722 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:09,723 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:10,104 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:10,258 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:10,259 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:10,260 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:10,261 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:10,706 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:10,707 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:10,707 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:10,708 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:11,108 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:11,108 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:11,195 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:11,196 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:11,196 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:11,197 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:11,637 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:11,637 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:11,637 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:11,638 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:12,113 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:12,154 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:12,154 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:12,154 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:12,155 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:12,575 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:12,576 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:12,576 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:12,577 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:13,045 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:13,045 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:13,046 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:13,046 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:13,127 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:13,128 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:13,588 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:13,589 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:13,589 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:13,590 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:14,098 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:14,098 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:14,099 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:14,099 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:14,132 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:14,574 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:14,575 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:14,575 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:14,575 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:15,007 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:15,008 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:15,008 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:15,009 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:15,143 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:15,143 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:15,455 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:15,456 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:15,456 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:15,456 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:15,926 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:15,926 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:15,927 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:15,927 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:16,156 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:16,386 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:16,387 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:16,387 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:16,388 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:16,809 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:16,810 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:16,811 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:16,811 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:17,160 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:17,161 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:17,229 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:17,229 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:17,230 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:17,230 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:17,751 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:17,752 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:17,752 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:17,752 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:18,173 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:18,259 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:18,259 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:18,260 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:18,260 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:18,761 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:18,761 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:18,762 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:18,762 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:19,188 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:19,188 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:19,235 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:19,236 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:19,236 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:19,237 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:19,695 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:19,695 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:19,695 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:19,696 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:20,072 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-13 19:17:20,072 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: stop_status
+2022-07-13 19:17:20,194 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:20,200 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:20,621 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:21,102 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:21,201 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:21,573 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:21,574 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:21,574 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:21,575 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:21,575 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:21,575 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:21,576 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:21,576 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:21,576 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:21,641 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:21,642 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:21,642 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:21,642 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:22,109 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:22,109 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:22,109 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:22,110 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:22,207 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:22,544 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:22,547 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:22,548 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:22,549 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:23,093 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:23,094 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:23,094 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:23,095 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:23,221 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:23,222 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:23,552 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:23,553 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:23,553 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:23,553 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:24,029 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:24,030 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:24,030 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:24,030 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:24,236 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:24,530 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:24,531 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:24,531 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:24,540 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:24,985 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:24,986 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:24,986 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:24,986 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:25,238 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:25,239 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:25,476 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:25,476 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:25,476 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:25,477 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:25,933 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:25,933 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:25,934 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:25,934 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:26,253 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:26,371 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:26,372 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:26,372 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:26,373 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:26,824 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:26,825 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:26,825 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:26,825 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:27,264 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:27,265 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:27,324 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:27,324 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:27,324 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:27,325 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:27,784 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:27,784 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:27,784 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:27,784 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:28,278 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:28,293 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:28,293 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:28,294 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:28,296 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:28,721 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:28,721 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:28,721 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:28,722 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:29,136 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:29,136 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:29,137 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:29,137 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:29,291 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:29,291 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:29,559 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:29,560 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:29,560 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:29,560 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:30,043 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:30,044 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:30,044 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:30,044 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:30,300 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:30,530 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:30,530 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:30,531 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:30,531 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:30,952 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:30,952 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:30,953 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:30,953 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:31,310 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:31,311 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:31,356 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:31,356 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:31,356 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:31,357 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:31,892 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:31,892 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:31,892 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:31,893 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:32,309 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:32,310 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:32,310 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:32,310 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:32,324 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:32,830 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:32,830 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:32,831 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:32,832 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:33,277 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:33,277 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:33,277 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:33,278 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:33,333 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:33,334 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:33,725 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:33,726 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:33,726 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:33,727 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:34,123 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:34,123 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:34,124 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:34,124 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:34,339 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:34,690 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:34,691 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:34,691 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:34,691 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:35,150 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: partial_history
+2022-07-13 19:17:35,150 DEBUG   SenderThread:20304 [sender.py:send():236] send: history
+2022-07-13 19:17:35,151 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:35,151 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:35,343 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:35,343 INFO    Thread-7  :20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:36,153 DEBUG   SenderThread:20304 [sender.py:send():236] send: telemetry
+2022-07-13 19:17:36,616 DEBUG   SenderThread:20304 [sender.py:send():236] send: exit
+2022-07-13 19:17:36,617 INFO    SenderThread:20304 [sender.py:send_exit():372] handling exit code: 1
+2022-07-13 19:17:36,618 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:36,618 INFO    SenderThread:20304 [sender.py:send_exit():374] handling runtime: 126
+2022-07-13 19:17:36,620 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:36,620 INFO    SenderThread:20304 [sender.py:send_exit():380] send defer
+2022-07-13 19:17:36,621 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:36,622 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,622 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 0
+2022-07-13 19:17:36,623 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,623 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-07-13 19:17:36,624 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 1
+2022-07-13 19:17:36,625 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,625 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 1
+2022-07-13 19:17:36,681 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,681 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-07-13 19:17:36,681 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 2
+2022-07-13 19:17:36,681 DEBUG   SenderThread:20304 [sender.py:send():236] send: stats
+2022-07-13 19:17:36,682 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,682 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 2
+2022-07-13 19:17:36,682 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,682 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-07-13 19:17:36,682 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 3
+2022-07-13 19:17:36,682 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,682 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 3
+2022-07-13 19:17:36,682 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,682 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-07-13 19:17:36,682 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 4
+2022-07-13 19:17:36,683 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,683 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 4
+2022-07-13 19:17:36,683 DEBUG   SenderThread:20304 [sender.py:send():236] send: summary
+2022-07-13 19:17:36,683 INFO    SenderThread:20304 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-13 19:17:36,684 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,684 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-07-13 19:17:36,684 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 5
+2022-07-13 19:17:36,684 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:36,684 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 5
+2022-07-13 19:17:36,684 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:36,684 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-07-13 19:17:36,733 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,155 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 6
+2022-07-13 19:17:37,156 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,156 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:37,156 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 6
+2022-07-13 19:17:37,156 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:37,156 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-07-13 19:17:37,156 INFO    SenderThread:20304 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-07-13 19:17:37,258 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,356 INFO    SenderThread:20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:37,357 INFO    SenderThread:20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:37,357 INFO    SenderThread:20304 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\config.yaml
+2022-07-13 19:17:37,358 INFO    SenderThread:20304 [dir_watcher.py:finish():383] scan: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files
+2022-07-13 19:17:37,358 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\conda-environment.yaml conda-environment.yaml
+2022-07-13 19:17:37,359 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\config.yaml config.yaml
+2022-07-13 19:17:37,360 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log output.log
+2022-07-13 19:17:37,360 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\requirements.txt requirements.txt
+2022-07-13 19:17:37,368 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-metadata.json wandb-metadata.json
+2022-07-13 19:17:37,369 INFO    SenderThread:20304 [dir_watcher.py:finish():397] scan save: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json wandb-summary.json
+2022-07-13 19:17:37,373 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 7
+2022-07-13 19:17:37,373 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,377 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:37,377 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 7
+2022-07-13 19:17:37,378 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:37,378 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-07-13 19:17:37,378 INFO    SenderThread:20304 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-13 19:17:37,480 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,480 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,588 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,588 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,697 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,697 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,804 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,805 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:37,913 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:37,913 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,020 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,020 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,134 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,135 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,238 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,238 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,345 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,345 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,454 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,454 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,563 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,563 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,670 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,670 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,779 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,779 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,885 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,885 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:38,994 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:38,994 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,100 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,100 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,207 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,207 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,317 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,317 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,337 INFO    Thread-14 :20304 [upload_job.py:push():138] Uploaded file D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\requirements.txt
+2022-07-13 19:17:39,423 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,423 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,425 INFO    Thread-13 :20304 [upload_job.py:push():138] Uploaded file D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\output.log
+2022-07-13 19:17:39,531 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,531 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,536 INFO    Thread-15 :20304 [upload_job.py:push():138] Uploaded file D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\wandb-summary.json
+2022-07-13 19:17:39,638 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,638 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,746 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,746 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,793 INFO    Thread-12 :20304 [upload_job.py:push():138] Uploaded file D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\files\config.yaml
+2022-07-13 19:17:39,853 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,853 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,964 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:39,964 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:39,995 INFO    Thread-6  :20304 [sender.py:transition_state():393] send defer: 8
+2022-07-13 19:17:39,996 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:39,996 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 8
+2022-07-13 19:17:39,997 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:39,997 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-07-13 19:17:40,072 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:42,076 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 9
+2022-07-13 19:17:42,076 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:42,077 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:42,077 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 9
+2022-07-13 19:17:42,077 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:42,077 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-07-13 19:17:42,077 INFO    SenderThread:20304 [sender.py:transition_state():393] send defer: 10
+2022-07-13 19:17:42,077 DEBUG   SenderThread:20304 [sender.py:send():236] send: final
+2022-07-13 19:17:42,077 DEBUG   SenderThread:20304 [sender.py:send():236] send: footer
+2022-07-13 19:17:42,078 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: defer
+2022-07-13 19:17:42,078 INFO    HandlerThread:20304 [handler.py:handle_request_defer():163] handle defer: 10
+2022-07-13 19:17:42,078 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: defer
+2022-07-13 19:17:42,078 INFO    SenderThread:20304 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-07-13 19:17:42,186 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: poll_exit
+2022-07-13 19:17:42,186 DEBUG   SenderThread:20304 [sender.py:send_request():250] send_request: poll_exit
+2022-07-13 19:17:42,187 INFO    SenderThread:20304 [file_pusher.py:join():176] waiting for file pusher
+2022-07-13 19:17:43,613 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: sampled_history
+2022-07-13 19:17:43,626 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: get_summary
+2022-07-13 19:17:43,627 DEBUG   HandlerThread:20304 [handler.py:handle_request():140] handle_request: shutdown
+2022-07-13 19:17:43,627 INFO    HandlerThread:20304 [handler.py:finish():806] shutting down handler
+2022-07-13 19:17:44,082 INFO    WriterThread:20304 [datastore.py:close():279] close: D:\AI\kits21-master\kits21\wandb\run-20220713_191523-1q4kzgxs\run-1q4kzgxs.wandb
+2022-07-13 19:17:44,518 INFO    SenderThread:20304 [sender.py:finish():1114] shutting down sender
+2022-07-13 19:17:44,518 INFO    SenderThread:20304 [file_pusher.py:finish():171] shutting down file pusher
+2022-07-13 19:17:44,518 INFO    SenderThread:20304 [file_pusher.py:join():176] waiting for file pusher
+2022-07-13 19:17:44,525 INFO    MainThread:20304 [internal.py:handle_exit():80] Internal process exited

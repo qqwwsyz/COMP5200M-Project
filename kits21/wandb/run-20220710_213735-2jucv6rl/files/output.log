@@ -1,0 +1,37 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/42 [00:02<?, ?img/s]
+Traceback (most recent call last):
+  File "D:\AI\kits21-master\kits21\train.py", line 197, in <module>
+    train_net(net=net,
+  File "D:\AI\kits21-master\kits21\train.py", line 85, in train_net
+    for batch in train_loader:
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\dataloader.py", line 1224, in _next_data
+    return self._process_data(data)
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\dataloader.py", line 1250, in _process_data
+    data.reraise()
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\_utils.py", line 457, in reraise
+    raise exception
+AssertionError: Caught AssertionError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\_utils\worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\utils\data\dataset.py", line 471, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "D:\AI\kits21-master\kits21\utils\data_loading4Bone.py", line 73, in __getitem__
+    assert len(mask_file) == 1, f'Either no mask or multiple masks found for the ID {name}: {mask_file}'
+AssertionError: Either no mask or multiple masks found for the ID case_00266: []

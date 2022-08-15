@@ -1,0 +1,39 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/10790 [00:07<?, ?img/s]
+Traceback (most recent call last):
+  File "D:\AI\kits21-master\kits21\train.py", line 197, in <module>
+    train_net(net=net,
+  File "D:\AI\kits21-master\kits21\train.py", line 98, in train_net
+    masks_pred = net(images)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\AI\kits21-master\kits21\unet\unet_model.py", line 34, in forward
+    x = self.up4(x, x1)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\AI\kits21-master\kits21\unet\unet_parts.py", line 68, in forward
+    return self.conv(x)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\AI\kits21-master\kits21\unet\unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\container.py", line 141, in forward
+    input = module(input)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\nn\functional.py", line 2421, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 6.00 GiB total capacity; 2.42 GiB already allocated; 1.74 GiB free; 2.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

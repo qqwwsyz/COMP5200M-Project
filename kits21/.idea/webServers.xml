@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2d9ec328-415e-403f-b1ac-11e7e0c342dc" name="DEMOYUN">
+        <fileTransfer accessType="SFTP" host="sdly.blockelite.cn" port="17030" sshConfigId="c7030bf1-d756-4a17-89ee-00d22752158b" sshConfig="root@sdly.blockelite.cn:17030 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

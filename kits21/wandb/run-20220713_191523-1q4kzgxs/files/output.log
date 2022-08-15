@@ -1,0 +1,89 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/20:   1%|          | 494/54472 [02:05<3:49:14,  3.92img/s, loss (batch)=0.139]
+Traceback (most recent call last):
+  File "D:\AI\kits21-master\kits21\train.py", line 197, in <module>
+    train_net(net=net,
+  File "D:\AI\kits21-master\kits21\train.py", line 85, in train_net
+    for batch in train_loader:
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\collate.py", line 157, in default_collate
+    return elem_type({key: default_collate([d[key] for d in batch]) for key in elem})
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\collate.py", line 157, in <dictcomp>
+    return elem_type({key: default_collate([d[key] for d in batch]) for key in elem})
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\collate.py", line 138, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: stack expects each tensor to be equal size, but got [1, 256, 256] at entry 0 and [1, 398, 256] at entry 1

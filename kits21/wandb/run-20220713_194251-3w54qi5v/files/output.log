@@ -1,0 +1,33 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/20:   0%|          | 0/54472 [00:01<?, ?img/s]
+Traceback (most recent call last):
+  File "D:\AI\kits21-master\kits21\train.py", line 197, in <module>
+    train_net(net=net,
+  File "D:\AI\kits21-master\kits21\train.py", line 85, in train_net
+    for batch in train_loader:
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\torch\utils\data\dataset.py", line 471, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "D:\AI\kits21-master\kits21\utils\data_loading4Bone.py", line 86, in __getitem__
+    img = self.preprocess(img, self.scale, is_mask=False)
+  File "D:\AI\kits21-master\kits21\utils\data_loading4Bone.py", line 33, in preprocess
+    w, h = pil_img.shape
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\PIL\Image.py", line 519, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape

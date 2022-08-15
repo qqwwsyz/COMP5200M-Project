@@ -1,0 +1,214 @@
+INFO: Starting training:
+        Epochs:          {epochs}
+        Batch size:      {batch_size}
+        Learning rate:   {learning_rate}
+        Training size:   {n_train}
+        Validation size: {n_val}
+        Checkpoints:     {save_checkpoint}
+        Device:          {device.type}
+        Images scaling:  {img_scale}
+        Mixed Precision: {amp}
+Epoch 1/1000:   0%|          | 0/10790 [00:00<?, ?img/s]C:\Users\OUR\anaconda3\envs\pytorch=3.10\lib\site-packages\torch\autocast_mode.py:162: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+llllll000000000000
+tensor([0, 1])
+Epoch 1/1000:   0%|          | 8/10790 [00:29<10:55:03,  3.65s/img, loss (batch)=1.39]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 16/10790 [00:45<8:06:30,  2.71s/img, loss (batch)=1.34]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 24/10790 [00:59<6:43:46,  2.25s/img, loss (batch)=1.29]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 32/10790 [01:12<6:04:39,  2.03s/img, loss (batch)=1.24]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 40/10790 [01:26<5:44:09,  1.92s/img, loss (batch)=1.2]
+llllll000000000000
+
+Epoch 1/1000:   0%|          | 48/10790 [01:40<5:29:51,  1.84s/img, loss (batch)=1.15]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 56/10790 [01:53<5:23:00,  1.81s/img, loss (batch)=1.11]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 64/10790 [02:08<5:22:39,  1.80s/img, loss (batch)=1.08]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 72/10790 [02:22<5:20:59,  1.80s/img, loss (batch)=1.05]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 80/10790 [02:36<5:18:27,  1.78s/img, loss (batch)=1.03]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 88/10790 [02:51<5:18:58,  1.79s/img, loss (batch)=0.998]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 96/10790 [03:05<5:17:05,  1.78s/img, loss (batch)=0.971]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 104/10790 [03:18<5:13:56,  1.76s/img, loss (batch)=0.934]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 112/10790 [03:32<5:12:51,  1.76s/img, loss (batch)=0.918]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 120/10790 [03:46<5:12:15,  1.76s/img, loss (batch)=0.891]
+llllll000000000000
+
+Epoch 1/1000:   1%|          | 128/10790 [04:00<5:11:00,  1.75s/img, loss (batch)=0.869]
+llllll000000000000
+
+Epoch 1/1000:   1%|▏         | 136/10790 [04:14<5:11:40,  1.76s/img, loss (batch)=0.847]
+llllll000000000000
+
+Epoch 1/1000:   1%|▏         | 144/10790 [04:28<5:09:59,  1.75s/img, loss (batch)=0.848]
+llllll000000000000
+
+Epoch 1/1000:   1%|▏         | 152/10790 [04:42<5:09:04,  1.74s/img, loss (batch)=0.796]
+llllll000000000000
+
+Epoch 1/1000:   1%|▏         | 160/10790 [04:56<5:08:20,  1.74s/img, loss (batch)=0.803]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 168/10790 [05:10<5:08:48,  1.74s/img, loss (batch)=0.771]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 176/10790 [05:24<5:08:11,  1.74s/img, loss (batch)=0.767]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 184/10790 [05:38<5:08:16,  1.74s/img, loss (batch)=0.761]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 192/10790 [05:52<5:08:21,  1.75s/img, loss (batch)=0.744]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 200/10790 [06:06<5:08:49,  1.75s/img, loss (batch)=0.738]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 208/10790 [06:21<5:12:03,  1.77s/img, loss (batch)=0.718]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 216/10790 [06:39<5:43:11,  1.95s/img, loss (batch)=0.696]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 224/10790 [06:53<5:30:48,  1.88s/img, loss (batch)=0.7]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 232/10790 [07:07<5:20:10,  1.82s/img, loss (batch)=0.689]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 240/10790 [07:20<5:13:40,  1.78s/img, loss (batch)=0.678]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 248/10790 [07:34<5:11:02,  1.77s/img, loss (batch)=0.68]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 256/10790 [07:49<5:16:24,  1.80s/img, loss (batch)=0.662]
+llllll000000000000
+
+Epoch 1/1000:   2%|▏         | 264/10790 [08:05<5:24:01,  1.85s/img, loss (batch)=0.656]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 272/10790 [08:18<5:13:33,  1.79s/img, loss (batch)=0.655]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 280/10790 [08:31<5:07:53,  1.76s/img, loss (batch)=0.64]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 288/10790 [08:45<5:03:56,  1.74s/img, loss (batch)=0.638]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 296/10790 [08:58<5:01:21,  1.72s/img, loss (batch)=0.622]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 304/10790 [09:12<4:59:27,  1.71s/img, loss (batch)=0.633]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 312/10790 [09:26<4:59:47,  1.72s/img, loss (batch)=0.6]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 320/10790 [09:40<5:00:38,  1.72s/img, loss (batch)=0.598]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 328/10790 [09:54<5:02:21,  1.73s/img, loss (batch)=0.612]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 336/10790 [10:07<5:00:28,  1.72s/img, loss (batch)=0.6]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 344/10790 [10:21<4:58:25,  1.71s/img, loss (batch)=0.577]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 352/10790 [10:35<5:00:46,  1.73s/img, loss (batch)=0.573]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 360/10790 [10:51<5:14:15,  1.81s/img, loss (batch)=0.582]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 368/10790 [11:06<5:18:39,  1.83s/img, loss (batch)=0.56]
+llllll000000000000
+
+Epoch 1/1000:   3%|▎         | 376/10790 [11:19<5:08:17,  1.78s/img, loss (batch)=0.551]
+llllll000000000000
+
+Epoch 1/1000:   4%|▎         | 384/10790 [11:32<5:01:44,  1.74s/img, loss (batch)=0.549]
+llllll000000000000
+
+Epoch 1/1000:   4%|▎         | 392/10790 [11:46<4:59:39,  1.73s/img, loss (batch)=0.566]
+llllll000000000000
+
+Epoch 1/1000:   4%|▎         | 400/10790 [12:00<4:59:17,  1.73s/img, loss (batch)=0.557]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 408/10790 [12:13<4:55:53,  1.71s/img, loss (batch)=0.56]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 416/10790 [12:26<4:52:38,  1.69s/img, loss (batch)=0.533]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 424/10790 [12:40<4:51:23,  1.69s/img, loss (batch)=0.532]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 432/10790 [12:53<4:51:21,  1.69s/img, loss (batch)=0.522]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 440/10790 [13:07<4:53:17,  1.70s/img, loss (batch)=0.522]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 448/10790 [13:22<5:02:03,  1.75s/img, loss (batch)=0.535]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 456/10790 [13:40<5:23:05,  1.88s/img, loss (batch)=0.516]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 464/10790 [13:53<5:11:04,  1.81s/img, loss (batch)=0.506]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 472/10790 [14:06<5:02:48,  1.76s/img, loss (batch)=0.506]
+llllll000000000000
+
+Epoch 1/1000:   4%|▍         | 480/10790 [14:20<4:59:53,  1.75s/img, loss (batch)=0.508]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 488/10790 [14:33<4:58:48,  1.74s/img, loss (batch)=0.488]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 496/10790 [14:47<4:56:13,  1.73s/img, loss (batch)=0.489]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 504/10790 [15:01<4:58:57,  1.74s/img, loss (batch)=0.493]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 512/10790 [15:16<5:04:54,  1.78s/img, loss (batch)=0.475]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 520/10790 [15:30<5:02:15,  1.77s/img, loss (batch)=0.479]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 528/10790 [15:45<5:04:22,  1.78s/img, loss (batch)=0.471]
+llllll000000000000
+
+Epoch 1/1000:   5%|▍         | 536/10790 [16:06<5:08:14,  1.80s/img, loss (batch)=0.472]
+INFO: Saved interrupt

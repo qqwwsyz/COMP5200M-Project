@@ -1,0 +1,53 @@
+2022-07-10 23:19:29,560 INFO    MainThread:2640 [internal.py:wandb_internal():90] W&B internal server running at pid: 2640, started at: 2022-07-10 23:19:29.560391
+2022-07-10 23:19:29,562 INFO    WriterThread:2640 [datastore.py:open_for_write():75] open: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\run-pbor80jj.wandb
+2022-07-10 23:19:29,564 DEBUG   SenderThread:2640 [sender.py:send():236] send: header
+2022-07-10 23:19:29,564 DEBUG   SenderThread:2640 [sender.py:send():236] send: run
+2022-07-10 23:19:29,565 INFO    SenderThread:2640 [sender.py:_maybe_setup_resume():493] checking resume status for None/U-Net/pbor80jj
+2022-07-10 23:19:30,436 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: check_version
+2022-07-10 23:19:30,441 INFO    SenderThread:2640 [dir_watcher.py:__init__():216] watching files in: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files
+2022-07-10 23:19:30,441 INFO    SenderThread:2640 [sender.py:_start_run_threads():815] run started: pbor80jj with start time 1657466368
+2022-07-10 23:19:30,441 DEBUG   SenderThread:2640 [sender.py:send():236] send: summary
+2022-07-10 23:19:30,441 INFO    SenderThread:2640 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-07-10 23:19:30,442 DEBUG   SenderThread:2640 [sender.py:send_request():250] send_request: check_version
+2022-07-10 23:19:31,091 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: run_start
+2022-07-10 23:19:31,113 DEBUG   HandlerThread:2640 [meta.py:__init__():35] meta init
+2022-07-10 23:19:31,113 DEBUG   HandlerThread:2640 [meta.py:__init__():49] meta init done
+2022-07-10 23:19:31,113 DEBUG   HandlerThread:2640 [meta.py:probe():209] probe
+2022-07-10 23:19:31,140 DEBUG   HandlerThread:2640 [meta.py:_save_pip():53] save pip
+2022-07-10 23:19:31,140 DEBUG   HandlerThread:2640 [meta.py:_save_pip():67] save pip done
+2022-07-10 23:19:31,140 DEBUG   HandlerThread:2640 [meta.py:_save_conda():74] save conda
+2022-07-10 23:19:31,146 ERROR   HandlerThread:2640 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\site-packages\wandb\sdk\internal\meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\OUR\anaconda3\envs\pytorch\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+2022-07-10 23:19:31,147 DEBUG   HandlerThread:2640 [meta.py:_save_conda():84] save conda done
+2022-07-10 23:19:31,147 DEBUG   HandlerThread:2640 [meta.py:probe():247] probe done
+2022-07-10 23:19:31,150 DEBUG   SenderThread:2640 [sender.py:send():236] send: files
+2022-07-10 23:19:31,150 INFO    SenderThread:2640 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-07-10 23:19:31,156 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-10 23:19:31,156 DEBUG   SenderThread:2640 [sender.py:send_request():250] send_request: stop_status
+2022-07-10 23:19:31,446 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\wandb-summary.json
+2022-07-10 23:19:31,447 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\conda-environment.yaml
+2022-07-10 23:19:31,447 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\output.log
+2022-07-10 23:19:31,447 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\requirements.txt
+2022-07-10 23:19:31,447 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_created():269] file/dir created: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\wandb-metadata.json
+2022-07-10 23:19:31,553 DEBUG   SenderThread:2640 [sender.py:send():236] send: telemetry
+2022-07-10 23:19:31,553 DEBUG   SenderThread:2640 [sender.py:send():236] send: config
+2022-07-10 23:19:32,135 INFO    Thread-11 :2640 [upload_job.py:push():138] Uploaded file C:\Users\OUR\AppData\Local\Temp\tmp45wx82gcwandb\fgnc8fvu-wandb-metadata.json
+2022-07-10 23:19:33,459 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\output.log
+2022-07-10 23:19:46,564 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-10 23:19:46,564 DEBUG   SenderThread:2640 [sender.py:send_request():250] send_request: stop_status
+2022-07-10 23:20:00,697 INFO    Thread-7  :2640 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\AI\kits21-master\kits21\wandb\run-20220710_231928-pbor80jj\files\config.yaml
+2022-07-10 23:20:01,743 DEBUG   SenderThread:2640 [sender.py:send():236] send: stats
+2022-07-10 23:20:02,081 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-10 23:20:02,081 DEBUG   SenderThread:2640 [sender.py:send_request():250] send_request: stop_status
+2022-07-10 23:20:17,831 DEBUG   HandlerThread:2640 [handler.py:handle_request():140] handle_request: stop_status
+2022-07-10 23:20:17,831 DEBUG   SenderThread:2640 [sender.py:send_request():250] send_request: stop_status
+2022-07-10 23:20:19,215 WARNING MainThread:2640 [internal.py:wandb_internal():153] Internal process interrupt: 1
