@@ -1,6 +1,8 @@
 ##Python version: Python 3.9
 
 
+##Python packages:
+Numpy,
 
 
 ##The structure of the system:
