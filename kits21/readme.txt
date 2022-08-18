@@ -43,6 +43,8 @@ Packages are shown in the front of each python files.
 5.precision.py : Accuracy Dice scores
 6.generate_mhd.py : Generate mhd images
 
+-Steps:
+process_data -> train -> readnpy -> predict -> precision
 
 
 
